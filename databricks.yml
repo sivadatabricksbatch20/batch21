@@ -4,12 +4,20 @@ bundle:
 include:
   - resources/*.yml
 
+variables:
+  cluster_id:
+    description: Cluster id for each environment
+
 targets:
   dev:
     default: true
     workspace:
       host: https://adb-7405617163760083.3.azuredatabricks.net
+    variables:
+      cluster_id: 0427-082243-aif6x1nv
 
   prod:
     workspace:
       host: https://adb-7405613322118413.13.azuredatabricks.net
+    variables:
+      cluster_id: 0514-152217-041x3nvv
