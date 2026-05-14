@@ -1,0 +1,15 @@
+bundle:
+  name: batch21
+
+include:
+  - resources/*.yml
+
+targets:
+  dev:
+    default: true
+    workspace:
+      host: https://adb-7405617163760083.3.azuredatabricks.net
+
+  prod:
+    workspace:
+      host: https://adb-7405613322118413.13.azuredatabricks.net
