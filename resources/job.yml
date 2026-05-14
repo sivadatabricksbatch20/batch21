@@ -6,5 +6,5 @@ resources:
       tasks:
         - task_key: demo_task
           notebook_task:
-            notebook_path: ../src/demo_notebook.py
+            notebook_path: ../src/Demo_notebook.py
           existing_cluster_id: ${var.cluster_id}
