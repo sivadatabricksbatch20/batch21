@@ -1,0 +1,10 @@
+resources:
+  jobs:
+    batch21_demo_job:
+      name: batch21_demo_job_${bundle.target}
+
+      tasks:
+        - task_key: demo_task
+          notebook_task:
+            notebook_path: ../src/demo_notebook.py
+          existing_cluster_id: 0514-152217-041x3nvv
