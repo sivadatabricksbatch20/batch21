@@ -7,4 +7,4 @@ resources:
         - task_key: demo_task
           notebook_task:
             notebook_path: ../src/Demo_notebook.py
-          existing_cluster_id: 0514-152217-041x3nvv
+          existing_cluster_id: ${var.cluster_id}
